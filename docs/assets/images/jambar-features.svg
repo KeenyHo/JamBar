@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" width="960" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0f17"/>
+      <stop offset="50%" stop-color="#111726"/>
+      <stop offset="100%" stop-color="#0d131f"/>
+    </linearGradient>
+    <radialGradient id="glowAmber" cx="0.12" cy="0.1" r="0.55">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowEmerald" cx="0.88" cy="0.9" r="0.55">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#161e2e"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; }
+    </style>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="960" height="360" rx="18" fill="url(#bg)"/>
+  <rect width="960" height="360" rx="18" fill="url(#glowAmber)"/>
+  <rect width="960" height="360" rx="18" fill="url(#glowEmerald)"/>
+  <rect x="0.75" y="0.75" width="958.5" height="358.5" rx="17.5" fill="none" stroke="#ffffff" stroke-opacity="0.09" stroke-width="1.5"/>
+
+  <!-- Header strip -->
+  <g transform="translate(32, 26)">
+    <!-- Mini JamBar EQ mark -->
+    <rect x="0" y="2" width="28" height="28" rx="8" fill="#182132" stroke="#f59e0b" stroke-opacity="0.35"/>
+    <rect x="6" y="15" width="3.5" height="10" rx="1.75" fill="#f59e0b"/>
+    <rect x="12.25" y="8" width="3.5" height="17" rx="1.75" fill="#f59e0b"/>
+    <rect x="18.5" y="12" width="3.5" height="13" rx="1.75" fill="#10b981"/>
+
+    <text x="40" y="15" class="sans" font-size="16" font-weight="700" fill="#f1f5f9">JamBar 核心架构一览</text>
+    <text x="40" y="31" class="sans" font-size="11.5" fill="#94a3b8">专为中文乐手打造的跨平台低延迟网络即兴排练室插件 · 默认直连 tanwen.cc:2049</text>
+
+    <!-- Right status pill -->
+    <g transform="translate(698, 3)">
+      <rect x="0" y="0" width="198" height="26" rx="13" fill="#10b981" fill-opacity="0.14" stroke="#10b981" stroke-opacity="0.4"/>
+      <circle cx="15" cy="13" r="4" fill="#10b981"/>
+      <text x="27" y="17" class="mono" font-size="11" font-weight="600" fill="#6ee7b7">tanwen.cc:2049 · OPEN</text>
+    </g>
+  </g>
+
+  <!-- 2x2 Feature Cards -->
+  <!-- Card 1: Cross-Platform & Ultra-Low Latency -->
+  <g transform="translate(32, 78)">
+    <rect width="438" height="120" rx="14" fill="url(#cardBg)" stroke="#f59e0b" stroke-opacity="0.28"/>
+    <rect x="16" y="16" width="34" height="34" rx="9" fill="#f59e0b" fill-opacity="0.16"/>
+    <!-- Bolt icon -->
+    <path d="M35 23 L26 35 L33 35 L31 44 L40 31 L33 31 Z" fill="#f59e0b"/>
+    <text x="62" y="30" class="sans" font-size="14.5" font-weight="700" fill="#f8fafc">Windows &amp; macOS 全形态 · 32/64 采样低延迟</text>
+    <text x="62" y="47" class="sans" font-size="11.5" fill="#94a3b8">零拷贝 SPSC 环形缓冲 + 256 采样广播聚合，告别低缓冲爆音</text>
+
+    <!-- Tags -->
+    <g transform="translate(16, 66)">
+      <rect x="0" y="0" width="146" height="22" rx="6" fill="#0d1320" stroke="#f59e0b" stroke-opacity="0.35"/>
+      <text x="10" y="15" class="mono" font-size="10.5" fill="#fde68a">Win x64 · ASIO + VST3</text>
+
+      <rect x="154" y="0" width="176" height="22" rx="6" fill="#0d1320" stroke="#38bdf8" stroke-opacity="0.35"/>
+      <text x="164" y="15" class="mono" font-size="10.5" fill="#bae6fd">macOS arm64 · App/AU/VST3</text>
+
+      <rect x="338" y="0" width="68" height="22" rx="6" fill="#0d1320" stroke="#10b981" stroke-opacity="0.35"/>
+      <text x="348" y="15" class="mono" font-size="10.5" fill="#6ee7b7">32/64 smp</text>
+    </g>
+    <text x="16" y="106" class="sans" font-size="11" fill="#64748b">通过 pluginval Strictness 5 严格校验 · 内嵌依赖开箱即用</text>
+  </g>
+
+  <!-- Card 2: 3-Track Beat-Synced Loop Station -->
+  <g transform="translate(490, 78)">
+    <rect width="438" height="120" rx="14" fill="url(#cardBg)" stroke="#38bdf8" stroke-opacity="0.28"/>
+    <rect x="16" y="16" width="34" height="34" rx="9" fill="#38bdf8" fill-opacity="0.16"/>
+    <!-- Loop icon -->
+    <path d="M25 31 A8 8 0 0 1 39 27 M41 35 A8 8 0 0 1 27 39" fill="none" stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round"/>
+    <polygon points="39,23 42,29 36,28" fill="#38bdf8"/>
+    <polygon points="27,43 24,37 30,38" fill="#38bdf8"/>
+
+    <text x="62" y="30" class="sans" font-size="14.5" font-weight="700" fill="#f8fafc">三轨小节同步循环器（Loop Station）</text>
+    <text x="62" y="47" class="sans" font-size="11.5" fill="#94a3b8">点击待录自动对齐下一轮第一拍，无缝循环叠加并同步广播</text>
+
+    <!-- 3 mini loop track slots -->
+    <g transform="translate(16, 66)">
+      <rect x="0" y="0" width="128" height="24" rx="6" fill="#0d1320" stroke="#10b981" stroke-opacity="0.5"/>
+      <circle cx="13" cy="12" r="3.5" fill="#10b981"/>
+      <text x="23" y="16" class="mono" font-size="10.5" fill="#a7f3d0">Loop 1 · 播放</text>
+
+      <rect x="138" y="0" width="128" height="24" rx="6" fill="#0d1320" stroke="#f59e0b" stroke-opacity="0.5"/>
+      <circle cx="151" cy="12" r="3.5" fill="#f59e0b"/>
+      <text x="161" y="16" class="mono" font-size="10.5" fill="#fde68a">Loop 2 · 待录</text>
+
+      <rect x="276" y="0" width="130" height="24" rx="6" fill="#0d1320" stroke="#38bdf8" stroke-opacity="0.35"/>
+      <circle cx="289" cy="12" r="3.5" fill="#38bdf8"/>
+      <text x="299" y="16" class="mono" font-size="10.5" fill="#bae6fd">Loop 3 · 就绪</text>
+    </g>
+    <text x="16" y="106" class="sans" font-size="11" fill="#64748b">三轨独立音量条 · 录制纯净干声输入 · 离线/在线均可随时叠加</text>
+  </g>
+
+  <!-- Card 3: Studio Sampled Drum Machine & Tap Tempo -->
+  <g transform="translate(32, 214)">
+    <rect width="438" height="120" rx="14" fill="url(#cardBg)" stroke="#10b981" stroke-opacity="0.28"/>
+    <rect x="16" y="16" width="34" height="34" rx="9" fill="#10b981" fill-opacity="0.16"/>
+    <!-- Drum waveform bars -->
+    <rect x="22" y="30" width="3" height="12" rx="1.5" fill="#10b981"/>
+    <rect x="28" y="23" width="3" height="19" rx="1.5" fill="#34d399"/>
+    <rect x="34" y="27" width="3" height="15" rx="1.5" fill="#10b981"/>
+    <rect x="40" y="33" width="3" height="9" rx="1.5" fill="#34d399"/>
+
+    <text x="62" y="30" class="sans" font-size="14.5" font-weight="700" fill="#f8fafc">真实录音棚采样鼓机 &amp; 独立点按测速</text>
+    <text x="62" y="47" class="sans" font-size="11.5" fill="#94a3b8">3 套多力度采样鼓组 · 12 大风格 54 套带 Swing 与踩镲闷音鼓型</text>
+
+    <g transform="translate(16, 66)">
+      <rect x="0" y="0" width="132" height="22" rx="6" fill="#0d1320" stroke="#10b981" stroke-opacity="0.38"/>
+      <text x="10" y="15" class="sans" font-size="10.5" fill="#6ee7b7">GSCW 温暖原声真鼓</text>
+
+      <rect x="140" y="0" width="128" height="22" rx="6" fill="#0d1320" stroke="#f59e0b" stroke-opacity="0.38"/>
+      <text x="150" y="15" class="sans" font-size="10.5" fill="#fde68a">GMRock 摇滚真鼓</text>
+
+      <rect x="276" y="0" width="130" height="22" rx="6" fill="#0d1320" stroke="#a78bfa" stroke-opacity="0.4"/>
+      <text x="286" y="15" class="mono" font-size="10.5" fill="#ddd6fe">Roland TR-909</text>
+    </g>
+    <text x="16" y="106" class="sans" font-size="11" fill="#64748b">进房仅同步房间 BPM · 离线自由调节 BPM/BPI · 独立点按测速不扰房间</text>
+  </g>
+
+  <!-- Card 4: Live World Map, Spectator Mode & Web Portal -->
+  <g transform="translate(490, 214)">
+    <rect width="438" height="120" rx="14" fill="url(#cardBg)" stroke="#a78bfa" stroke-opacity="0.28"/>
+    <rect x="16" y="16" width="34" height="34" rx="9" fill="#a78bfa" fill-opacity="0.16"/>
+    <!-- Globe icon -->
+    <circle cx="33" cy="33" r="9.5" fill="none" stroke="#c4b5fd" stroke-width="1.8"/>
+    <ellipse cx="33" cy="33" rx="4.5" ry="9.5" fill="none" stroke="#c4b5fd" stroke-width="1.4"/>
+    <line x1="23.5" y1="33" x2="42.5" y2="33" stroke="#c4b5fd" stroke-width="1.4"/>
+
+    <text x="62" y="30" class="sans" font-size="14.5" font-weight="700" fill="#f8fafc">实时乐手地图 · 旁观收听 · 中文聊天室</text>
+    <text x="62" y="47" class="sans" font-size="11.5" fill="#94a3b8">极简单立体声 I/O 常驻监听，支持 MIDI / OSC 控制与网页联动</text>
+
+    <g transform="translate(16, 66)">
+      <rect x="0" y="0" width="128" height="22" rx="6" fill="#0d1320" stroke="#a78bfa" stroke-opacity="0.38"/>
+      <text x="10" y="15" class="sans" font-size="10.5" fill="#ddd6fe">自动缩放世界地图</text>
+
+      <rect x="136" y="0" width="132" height="22" rx="6" fill="#0d1320" stroke="#38bdf8" stroke-opacity="0.35"/>
+      <text x="146" y="15" class="sans" font-size="10.5" fill="#bae6fd">旁观模式 &amp; 国旗定位</text>
+
+      <rect x="276" y="0" width="130" height="22" rx="6" fill="#0d1320" stroke="#10b981" stroke-opacity="0.35"/>
+      <text x="286" y="15" class="mono" font-size="10.5" fill="#6ee7b7">MIDI / OSC 控制</text>
+    </g>
+    <text x="16" y="106" class="sans" font-size="11" fill="#64748b">配合 tanwen.cc 网页端支持手机息屏收听、网页即兴与自动多轨录音回放</text>
+  </g>
+</svg>
