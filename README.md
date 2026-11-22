@@ -63,6 +63,14 @@
 - **公开服务器地址**：`tanwen.cc:2049`（免密匿名加入，8 席位公开即兴）
 - **网页端主页**：[https://tanwen.cc](https://tanwen.cc) — 支持网页实时收听（含手机息屏后台播放）、网页开麦加入演奏、双向实时聊天、自动混音波形回放与 REAPER 多轨工程导出。
 
-## 📄 开源协议
+## 📚 更多文档与独立模块源码
+
+- 📖 [**更新日志（CHANGELOG）**](./CHANGELOG.md) · ❓ [**常见问题排查（FAQ）**](./FAQ.md) · 💬 [**问题反馈（Issues）**](https://github.com/KeenyHo/JamBar/issues)
+- 🧩 [**独立音频模块参考源码（`modules/`）**](./modules/README.md)：已公开自研的 **真鼓采样鼓机（`DrumMachine`）** 与 **三轨同步循环器（`LoopStation`）** 无锁实时音频引擎源码供交流学习。
+
+## 📄 开源协议与完整源码获取
 
 本项目遵循 **GNU General Public License v2.0 (GPL-2.0)**（详见 [LICENSE](./LICENSE)）。
+
+- 本公开仓库用于托管 **JamBar 官方文档、正式跨平台安装包（Releases）、Issues 社区反馈以及部分独立音频模块源码**；
+- 为避免未经授权的二次打包与恶意篡改，完整编译工程暂存于私有仓库。依据 GPL-2.0 协议，如需获取对应发布版本的完整对应源码，请通过本仓库 [**Issues**](https://github.com/KeenyHo/JamBar/issues) 或访问 **[https://tanwen.cc](https://tanwen.cc)** 联系作者 **何岸文**，我们将按协议免费提供。
